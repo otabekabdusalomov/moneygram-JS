@@ -1,3 +1,4 @@
+// PROJECT GENARAL JS CONTST
 const elHeading = document.querySelector(".heading")
 const elForm = document.querySelector(".form");
 const elFormInput = document.querySelector(".form__input");
@@ -7,8 +8,8 @@ const elBtn = document.querySelector(".btn");
 const elBtnReset = document.querySelector(".btn__reset");
 
 
-elForm.addEventListener("submit", function(evt) {
-    evt.preventDefault()
+elForm.addEventListener("submit", function(add) {
+    add.preventDefault()
     
     elHeading.textContent = "Chorsu valyuta bozor";
     elBtn.textContent = "Amalga oshirildi";
@@ -45,13 +46,13 @@ elForm.addEventListener("submit", function(evt) {
         elFormGoal.textContent = `${funt * inputValue} so'm`;
     } else if (selectorValue == "yuan") {
         elFormGoal.textContent = `${yuan * inputValue} so'm`;
-    }
-    
+    }  
 })
 
-// elBtnReset.addEventListener("click", function() {
-//   elHeading.textContent = "MONEYGRAM";
-//   elBtn.textContent = "BOSHLASH";
-//   elBtnReset.textContent = ".....";
-//   elFormResult.textContent = "SUMMA"
-// })
+
+
+elBtnReset.addEventListener("click", function() {
+  elHeading.textContent = "Chorsu valyuta bozor";
+  elBtn.textContent = "Boshlash";
+  elBtnReset.textContent = "Qayta urinish";
+})
